@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach (var b in ViewBag.Book)
+{
+
+    <img src="@b.Img" width="200" height="300"/>
+    <p>@b.Title</p>
+    <p>@b.Author</p>
+    <p>@b.Description</p>
+    <p>@b.Year</p>
+}

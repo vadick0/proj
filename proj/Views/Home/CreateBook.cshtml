@@ -1,0 +1,28 @@
+﻿@model proj.ViewModels.LoginViewModel
+    <form asp-action="CreateBook" asp-controller="Home" method="post" enctype="multipart/form-data">
+        <p>
+            <label>Название книги</label><br>
+            <input type="text" name="Title" placeholder="Название книги" />
+        </p>
+        <p>
+            <label>Описание</label><br>
+            <input type="text" name="Description" placeholder="Описание" />
+        </p>
+        <p>
+            <label>Автор</label><br>
+            <input type="text" name="Author" placeholder="Автор" />
+        </p>
+        <p>
+            <label>Год выпуска</label><br>
+            <input type="number" name="Year" placeholder="Год выпуска" />
+        </p>
+        <p>
+            <label>Фото</label><br>
+            <input input type="file" name="formFile" placeholder="Вставьте фотографию" />
+        </p>
+        <p>
+            <label>Файл</label><br>
+            <input input type="file" name="uploadedFile" placeholder="Загрузите книгу" />
+            <input type="submit" value="Загрузить" />
+        </p>
+    </form>
